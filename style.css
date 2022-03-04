@@ -1,0 +1,298 @@
+body{
+    background-color:ghostwhite;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------------
+     1st section  
+ -----------------*/
+.container{
+    display: flex;
+    background-color: rgb(68, 68, 190);
+    width: 100%;
+    height: 800px;
+}
+.container:hover{
+    transform: scale(.8);
+    transition: transform 2s ease-in;
+}
+h1{
+    font-size: 90px;
+    color: aliceblue;
+}
+.live{
+    background-color: rgb(221, 111, 8);
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 30px;
+}
+.half{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.banner img{
+    width: 660px;
+    height: 650px;
+}
+
+/*-----------------
+     2nd section  
+-------------------*/
+
+.player{
+    width: 25%;
+    margin-left: 5%;
+    padding: 20px;
+    margin-top: 50px;
+    background-color:rgb(230, 227, 223);
+    border-radius: 10px;  
+}
+.star img{
+    width: 100%;
+}
+.famous-player{
+    display: flex;
+}
+
+/*---------------------------
+     3rd section(1st part)  
+------------------------------*/
+.Extra{
+    padding-left: 50px;
+    padding-right: 30px;
+}
+h4{
+    font-size: 50px;
+}
+iframe:hover{
+    transform: rotate(360deg);
+    transition:transform 2s;
+}
+/*---------------------------
+     3rd section(2nd part) 
+----------------------------*/
+.contain{
+    border: 2px solid brown;
+    margin-top: 80px;
+}
+.extra2{
+    text-align: center;
+    background-color: lightcoral;
+}
+.border{
+    width: 30%;
+    border-right: 1px solid red;
+    padding: 20px;
+}
+span{
+    color: red;
+}
+.line{
+    display: flex;
+
+}
+.line img{
+    width: 100px;
+}
+.equal{
+    display: flex;
+    padding-left: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 10px solid gray;
+    padding-left: 10px;
+}
+.separate{
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+/*-----------------
+     4th section  
+--------------------*/
+.Ball img{
+    width: 450px;
+    height: 110px;
+}
+.Ball{
+    padding-top: 150px;
+    text-align: center;
+}
+.logo{
+    text-align: center;
+    font-size: 30px;
+}
+.gap{
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+
+/*-----------------------
+    footer section  
+------------------------*/
+.last{
+    text-align: center;
+    font-size: 30px;
+}
+
+/*-----------------------------
+     media queries  
+-------------------------------*/
+
+/*-------------------
+     mobile device  
+----------------------*/
+@media only screen and (max-width:688px) {
+    /*-----------------
+         1st section  
+    -------------------*/
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 100%;
+    }
+    .live{
+        font-size: 10px;
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;
+    }
+    /*-----------------
+         2nd section  
+    -------------------*/
+    .famous-player{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .player{
+        width: 50%;
+        height: 50%;
+    }
+    /*---------------------------
+         3rd section(1st part)  
+    -----------------------------*/
+    iframe{
+        grid-template-columns: (1, 1fr);
+        width: 60%;
+        height: 60%;
+    }
+    .Extra{
+        font-size: 20px;
+    }
+    /*---------------------------
+         3rd section(2nd part)  
+    -----------------------------*/
+    .equal{
+        flex-direction: column;
+    }
+    .contain{
+        width: 50%;
+    }
+    .line img{
+        width: 40px;
+        height: 40px;
+    }
+    /*---------------------------
+         4th section  
+    -----------------------------*/
+    .Ball img{
+        width: 50%;
+    }
+    .Ball{
+        text-align: start;
+    }
+    .logo{
+        text-align: start;
+        font-size: 20px;
+    }
+    .last{
+        text-align: start;
+    }
+}
+
+/*---------------------
+         tablet  
+---------------------- */
+@media only screen and (max-width:992px) {
+    /*-----------------
+         1st section  
+    -------------------*/
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 100%;
+    }
+    .live{
+        font-size: 10px;
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;
+    }
+    /*-----------------
+         2nd section  
+    -------------------*/
+    .famous-player{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+    .player{
+        width: 50%;
+        height: 50%;
+    }
+    /*---------------------------
+         3rd section(1st part)  
+    -----------------------------*/
+    iframe{
+        grid-template-columns: (1, 1fr);
+        width: 60%;
+        height: 60%;
+    }
+    
+    .Extra{
+        font-size: 20px;
+        align-items: center;
+    }
+    /*---------------------------
+         3rd section(2nd part)  
+    -----------------------------*/
+    .equal{
+        flex-direction: column;
+    }
+    .contain{
+        width: 50%;
+        align-items: center;
+    }
+    .line img{
+        width: 40px;
+        height: 40px;
+    }
+    /*---------------------------
+         4th section  
+    -----------------------------*/
+    .Ball img{
+        width: 50%;
+    }
+    .logo{
+        font-size: 20px;
+    }
+}    
